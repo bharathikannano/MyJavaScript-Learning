@@ -34,3 +34,18 @@ return y ? x+y : function(y){ return x+y};
 sum(1,2)          //3
 sum(1)(2)         //3
 ```
+# The Powerful Fibonacci Series
+
+```javascript
+var Fibonacci = num => {
+  var n=0,m=1,b;
+      for(let i=3;i<=num;i++){
+            b=n+m;
+            n=m;
+            m=b;
+  console.log(b);
+      }
+}
+
+Fibonacci(8);              // 1  2  3  5  8  13
+```
