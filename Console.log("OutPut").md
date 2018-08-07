@@ -43,6 +43,9 @@ console.log(hellow".repeat(3))    //"hellowhellowhellow"
 ```
 
 ### == and ===
+
+##### Note : arrays, dates, and user defined objects are compared by their reference. This means it compares whether two objects are referring to the same location in memory.
+
 ```javascript
 var a = {num:1}
 var b = {num:1}
