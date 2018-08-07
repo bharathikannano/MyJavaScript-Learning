@@ -41,3 +41,16 @@ console.log([])           //[]
 ```javascript
 console.log(hellow".repeat(3))    //"hellowhellowhellow"
 ```
+
+### == and ===
+```javascript
+var a = {num:1}
+var b = {num:1}
+a == b                  //false
+a === b                 //false
+
+var c = a;            
+a == b                  //true
+a === b                 //true
+
+```
