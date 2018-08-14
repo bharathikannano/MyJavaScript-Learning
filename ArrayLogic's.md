@@ -24,3 +24,13 @@ arr3 = [...arr2, ...arr1];      // [3, 4, 5, 0, 1, 2]
 var parts = ['shoulders', 'knees']; 
 var lyrics = ['head', ...parts, 'and', 'toes'];       // ["head", "shoulders", "knees", "and", "toes"]
 ```
+
+### Spread as arguments
+```javascript
+function myFunction(v, w, x, y, z) { 
+console.log(v+w+x+y+z);             //5
+                                    //v=-1  w=0   x=1   y=2   z=3
+}
+var args = [0, 1];
+myFunction(-1, ...args, 2, ...[3]);
+```
