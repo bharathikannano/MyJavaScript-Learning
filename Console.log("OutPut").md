@@ -19,6 +19,8 @@ console.log("String %s", "MyLearning")    //String MyLearning
 console.log("Floating Point %f", 10.5)    //Floating Point 10.5
 
 console.log("Object as %o", {content : 'Learning'})   //Object as {name: "learning"}
+
+console.log("CSS %cJavascript", "color:blue");
 ```
 
 ### How to get NaN OutPut
@@ -45,12 +47,6 @@ console.log(NaN !== NaN)                                    //true
 console.log(isNaN(''))                                     //false
 console.log(isNaN(true))                                   //false
 console.log(isNaN('123'))                                  //false
-```
-
-
-```javascript
-
-
 ```
 
 ### Repeat
