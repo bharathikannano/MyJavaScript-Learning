@@ -1,3 +1,25 @@
+# Console World
+
+### console.log()
+```javascript
+console.log(41,42,43)             //41 42 43
+
+console.log(+[])                  //0
+
+console.log({}+[])                //[object Object]
+
+console.log({})                   //{}
+
+console.log([])                   //[]
+
+console.log('Number %d', 10)      //Number 10
+
+console.log("String %s", "MyLearning")    //String MyLearning
+
+console.log("Floating Point %f", 10.5)    //Floating Point 10.5
+
+console.log("Object as %o", {content : 'Learning'})   //Object as {name: "learning"}
+```
 
 ### How to get NaN OutPut
 ```javascript
@@ -27,13 +49,7 @@ console.log(isNaN('123'))                                  //false
 
 
 ```javascript
-console.log(+[])          //0
 
-console.log({}+[])        //[object Object]
-
-console.log({})           //{}
-
-console.log([])           //[]
 
 ```
 
