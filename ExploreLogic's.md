@@ -24,6 +24,13 @@ function sum(x){
 
 sum(1)(2)(3)            //6 
 ```
+### es6 way
+```javascript
+var sum = (x)=> (y)=> (z)=> x+y+z;
+
+sum(1)(2)(2)            //5
+```
+
 ### sum(x,y) or  sum(x)(y)  output x+y
 
 ```javascript
@@ -33,6 +40,15 @@ return y ? x+y : function(y){ return x+y};
 
 sum(1,2)          //3
 sum(1)(2)         //3
+```
+
+### es6 way
+
+```javascript
+var sum = (x,y) => y ? x+y : (y) => x+y;
+
+sum(1,4)          //5
+sum(1)(4)         //5
 ```
 # The Powerful Fibonacci Series
 
