@@ -45,3 +45,19 @@ arr.length = 5;       //5
 
 arr                   // [1,2,3,4,empty]
 ```
+
+# Array Sorting 
+
+### ascending
+```javascript
+var arr = [5,6,2,6,1,2,3];
+
+arr.sort((a,b) => a-b);     //[1, 2, 2, 3, 5, 6, 6]
+```
+
+### descending
+```javascript
+var arr = [5,6,2,6,1,2,3];
+
+arr.sort((a,b) => b-a);     //[6, 6, 5, 3, 2, 2, 1]
+```
