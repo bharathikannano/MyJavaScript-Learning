@@ -34,3 +34,14 @@ console.log(v+w+x+y+z);             //5
 var args = [0, 1];
 myFunction(-1, ...args, 2, ...[3]);
 ```
+### Change Array length 
+
+```javascript
+var arr = [1,2,3,4];
+
+arr.length            // 4
+
+arr.length = 5;       //5
+
+arr                   // [1,2,3,4,empty]
+```
