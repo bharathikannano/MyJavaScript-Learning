@@ -37,3 +37,24 @@ var SetRedColor = new PaintCar('red');
 console.log(SetRedColor.getColor());        //red
 
 ```
+
+### prototype
+```javascript
+
+var PaintCar = function(_color){
+ 	this.color = _color;
+};
+
+ PaintCar.prototype.getColor = function(){
+    return this.color;
+  };
+
+Object.prototype.toString  = function(){
+	return `color:${this.color}`;
+}
+  
+var SetRedColor = new PaintCar('red');
+
+console.log(SetRedColor.toString());        //color:red
+
+```
