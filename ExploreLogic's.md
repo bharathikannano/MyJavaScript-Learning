@@ -65,3 +65,11 @@ var Fibonacci = num => {
 
 Fibonacci(8);              // 1  2  3  5  8  13
 ```
+
+### infix operator
+```javascript
+Math.pow(5,2)         //25
+
+//same as
+5**2                  //25
+```
