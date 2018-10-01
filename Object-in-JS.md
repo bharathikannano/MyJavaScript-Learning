@@ -35,3 +35,30 @@ Object.keys(obj);           //["Name", "Age", "City", "Country"]
 
 Object.values(obj);         //["bharathikannan", 28, "chennai", "India"]
 ```
+
+### Object.entries()
+```javascript
+var obj = {"Name":"bharathikannan", "Age":28, "City":"chennai", "Country":"India"};
+
+
+for(let[key,value] of Object.entries(obj)){
+console.log(`key:${key} <=====> value:${value}`);
+}
+
+
+/*
+key:Name <=====> value:bharathikannan
+VM6954:2 key:Age <=====> value:28
+VM6954:2 key:City <=====> value:chennai
+VM6954:2 key:Country <=====> value:India
+*/
+
+
+const map = new Map(Object.entries(obj));
+
+/*
+Map(4) {"Name" => "bharathikannan", "Age" => 28, "City" => "chennai", "Country" => "India"}
+*/
+
+
+```
