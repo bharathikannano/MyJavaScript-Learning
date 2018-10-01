@@ -61,3 +61,15 @@ var arr = [5,6,2,6,1,2,3];
 
 arr.sort((a,b) => b-a);     //[6, 6, 5, 3, 2, 2, 1]
 ```
+
+### includes vs indexOf
+```javascript
+var arr = [1, 2, 3, 4, NaN];
+
+if(arr.includes(NaN)){
+console.log("include:" + arr.includes(NaN));  //include : true
+}
+if(arr.indexOf(NaN)){
+console.log("indexOf:" + arr.indexOf(NaN));   //indexOf : -1
+}
+```
