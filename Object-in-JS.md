@@ -29,16 +29,16 @@ var mergedObj = merge ( {}, obj1, obj2);
 
 ### Object.values() and Object.keys()
 ```javascript
-var obj = {"Name":"bharathikannan", "Age":28, "City":"chennai", "Country":"India"};
+var obj = {"Name":"Bharathikannan", "Age":28, "City":"chennai", "Country":"India"};
 
 Object.keys(obj);           //["Name", "Age", "City", "Country"]
 
-Object.values(obj);         //["bharathikannan", 28, "chennai", "India"]
+Object.values(obj);         //["Bharathikannan", 28, "chennai", "India"]
 ```
 
 ### Object.entries()
 ```javascript
-var obj = {"Name":"bharathikannan", "Age":28, "City":"chennai", "Country":"India"};
+var obj = {"Name":"Bharathikannan", "Age":28, "City":"chennai", "Country":"India"};
 
 
 for(let[key,value] of Object.entries(obj)){
@@ -47,7 +47,7 @@ console.log(`key:${key} <=====> value:${value}`);
 
 
 /*
-key:Name <=====> value:bharathikannan
+key:Name <=====> value:Bharathikannan
 VM6954:2 key:Age <=====> value:28
 VM6954:2 key:City <=====> value:chennai
 VM6954:2 key:Country <=====> value:India
@@ -57,8 +57,17 @@ VM6954:2 key:Country <=====> value:India
 const map = new Map(Object.entries(obj));
 
 /*
-Map(4) {"Name" => "bharathikannan", "Age" => 28, "City" => "chennai", "Country" => "India"}
+Map(4) {"Name" => "Bharathikannan", "Age" => 28, "City" => "chennai", "Country" => "India"}
 */
 
+
+```
+
+### spread examples
+```javascript
+var obj = {"Name":"Bharathikannan", "Age":28, "City":"chennai", "Country":"India"};
+
+let{Name:FullName, Age, Country} = obj;
+console.log(FullName);                //Bharathikannan
 
 ```
