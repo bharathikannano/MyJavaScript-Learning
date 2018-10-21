@@ -73,3 +73,12 @@ Math.pow(5,2)         //25
 //same as
 5**2                  //25
 ```
+
+### String Reverse
+```javascript
+var givenName = "Bharathikannan";
+
+var reverseName = givenName.split("")         //["B", "h", "a", "r", "a", "t", "h", "i", "k", "a", "n", "n", "a", "n"]
+                  .reduce((acc,e) => e+acc);
+console.log(reverseName);                   //"nannakihtarahB"
+```
