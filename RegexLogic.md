@@ -3,7 +3,7 @@
 
 ### Seprate "width" values from given string
 ```javascript
-c
+var i = "size=20jjfjjhsize=34hjjhfsize=76width=10jkkfyuduwidth=100";
 var arr=[];
 function replacer(str, offset, s) {
 
