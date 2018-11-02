@@ -82,3 +82,17 @@ var reverseName = givenName.split("")         //["B", "h", "a", "r", "a", "t", "
                   .reduce((acc,e) => e+acc);
 console.log(reverseName);                   //"nannakihtarahB"
 ```
+
+### Average Hight Calculation using ES6
+```javascript
+var data = {
+  Matt: { height: 174, weight: 69 },
+  Jason: { height: 190, weight: 103 }
+};
+var averageHeight = Object.values(data).length > 0 ? Object.values(data).map(v => v.height).reduce((c,v) => (c+v)/Object.values(data).length) : null;
+
+console.log(averageHeight);         //182
+
+//if data ={} then it will return 'null'
+
+```
