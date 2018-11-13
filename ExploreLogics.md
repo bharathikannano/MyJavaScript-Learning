@@ -66,7 +66,7 @@ var Fibonacci = num => {
 Fibonacci(8);              // 1  2  3  5  8  13
 ```
 
-### infix operator
+# infix operator
 ```javascript
 Math.pow(5,2)         //25
 
@@ -74,7 +74,7 @@ Math.pow(5,2)         //25
 5**2                  //25
 ```
 
-### String Reverse
+# String Reverse
 ```javascript
 var givenName = "Bharathikannan";
 
@@ -83,7 +83,7 @@ var reverseName = givenName.split("")         //["B", "h", "a", "r", "a", "t", "
 console.log(reverseName);                   //"nannakihtarahB"
 ```
 
-### Average Hight Calculation using ES6
+# Average Hight Calculation using ES6
 ```javascript
 var data = {
   Matt: { height: 174, weight: 69 },
@@ -95,4 +95,19 @@ console.log(averageHeight);         //182
 
 //if data ={} then it will return 'null'
 
+```
+
+# Find Given Number is Integer or not
+```javascript
+function isInt(num) {
+  return num % 1 === 0;
+}
+
+isInt(1)        //true
+isInt(45)       //true
+isInt(true)     //true
+isInt(false)    //true
+isInt(2.3)      //false
+isInt(.0)       //false
+isInt("zoo")    //false
 ```
