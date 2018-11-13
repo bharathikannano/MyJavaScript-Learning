@@ -58,4 +58,20 @@ return x + y;
 return x + y;
 }(2,3));        //5
 ```
+### bind function with objects
+```javascript
+function fullName() {
+  return "Hello, this is " + this.first + " " + this.last;
+}
 
+console.log(fullName());      // => Hello this is undefined undefined
+
+var person = {first: "Foo", last: "Bar"};
+
+var Person1 = {first: "Well", last: "Stock"};
+
+console.log(fullName.bind(person)());     // => Hello this is Foo Bar
+
+console.log(fullName.bind(person1)());     // => Hello this is Well Stock
+
+```
