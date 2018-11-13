@@ -75,3 +75,40 @@ console.log(fullName.bind(person)());     // => Hello this is Foo Bar
 console.log(fullName.bind(person1)());     // => Hello this is Well Stock
 
 ```
+
+# Callback Function
+
+### callback function simple example
+```javascript
+
+function modifyArray(arr, callback) {
+  // do something to arr here
+  arr.push(100);
+  // then execute the callback function that was passed
+  callback();
+}
+
+var arr = [1, 2, 3, 4, 5];
+
+modifyArray(arr, function() {
+  console.log("array has been modified", arr);      //array has been modified (6) [1, 2, 3, 4, 5, 100]
+});
+
+```
+
+# Closure Function 
+
+### Sample example for closure function
+#### "secret code" is assigned inside the function, but accessed out the parent function 
+```javascript
+function func() {
+  var priv = "secret code";
+  return function() {
+    return priv;
+  }
+}
+
+var getPriv = func();
+console.log(getPriv()); // => secret code
+
+```
