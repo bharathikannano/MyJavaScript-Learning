@@ -73,3 +73,31 @@ if(arr.indexOf(NaN)){
 console.log("indexOf:" + arr.indexOf(NaN));   //indexOf : -1
 }
 ```
+
+### entries() in Array
+```javascript
+for (const [i, v] of ['a', 'b', 'c', 2].entries()) {
+  console.log(i,v);
+}
+/*
+Output
+0 "a"
+1 "b"
+2 "c"
+3 2
+*/
+
+### Without entries
+for (const [i, v] of ['a', 'b', 'c', 2]) {
+  console.log(i,v);
+}
+
+/*
+Output
+a undefined
+b undefined
+c undefined
+2 undefined
+*/
+
+```
