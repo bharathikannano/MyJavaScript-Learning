@@ -101,3 +101,11 @@ c undefined
 */
 
 ```
+
+### Remove null/undefined values from Array
+```javascript
+var data = ['frank', , 'sue', , 'sally', null].compact();
+
+console.log(data);            //['frank', 'sue', 'sally']
+
+```
