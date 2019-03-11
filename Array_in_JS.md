@@ -62,6 +62,25 @@ var arr = [5,6,2,6,1,2,3];
 arr.sort((a,b) => b-a);     //[6, 6, 5, 3, 2, 2, 1]
 ```
 
+### Sorting Array with Object
+
+```javascript
+const words = new Array(
+{ word: "apple" },
+{ word: "orange" },
+{ word: "banana" });
+
+words.sort((a, b) => {
+  if (a.word < b.word) return -1;
+  if (a.word > b.word) return 1;
+  return 0;
+})
+
+Output: 
+[{word: "apple"}, {word: "banana"}, {word: "orange"}]
+
+```
+
 ### includes vs indexOf
 ```javascript
 var arr = [1, 2, 3, 4, NaN];
