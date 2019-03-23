@@ -27,6 +27,22 @@ var mergedObj = merge ( {}, obj1, obj2);
 // Object { 0: {}, 1: { foo: 'bar', x: 42 }, 2: { foo: 'baz', y: 13 } }
 ```
 
+```javascript
+const Basic = {name: 'Bharathikannan', title: 'Front End Developer'};
+
+const GitURL = 'https://github.com/Bharathikannano';
+
+const profile = { ...Basic, ...(GitURL && {GitURL})};
+
+console.log(profile);
+
+/*
+  {name: 'Bharathikannan', 
+  title: 'Front End Developer'
+  GitURL: 'https://github.com/Bharathikannano'}
+  */
+```
+
 ### Object.values() and Object.keys()
 ```javascript
 var obj = {"Name":"Bharathikannan", "Age":28, "City":"chennai", "Country":"India"};
