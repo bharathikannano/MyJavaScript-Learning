@@ -122,3 +122,25 @@ function factorial(n) {
 
 factorial(5)      // 120
 ```
+# Array to Object then destructing
+
+```javascript
+const arr = [['name','Bharathikannan'],['password','hashME!!'],['status','success']];
+
+var dat = Object.fromEntries(arr);
+
+console.log(arr);	// {name: "Bharathikannan", password: "hashME!!", status: "success"}
+
+var data = {social: {instagram : 'bharathikannan/insta', facebook: 'bharathikannan/fb'}};
+
+dat = {...dat, ...data};	// Object concatenation
+
+console.log(dat);	//{name: "Bharathikannan", password: "hashME!!", status: "success", social: {…}}
+
+//Destructing with alise name
+
+var {instagram : insta} = data.social;
+
+console.log(insta);	//"bharathikannan/insta"
+
+```
