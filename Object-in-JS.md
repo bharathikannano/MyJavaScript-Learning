@@ -50,6 +50,22 @@ var obj = {"Name":"Bharathikannan", "Age":28, "City":"chennai", "Country":"India
 Object.keys(obj);           //["Name", "Age", "City", "Country"]
 
 Object.values(obj);         //["Bharathikannan", 28, "chennai", "India"]
+
+Object.getOwnPropertyNames(obj);    //["Name", "Age", "City", "Country"]
+
+for(const key in obj){
+    console.log(key);
+    if(personDetails.hasOwnProperty('Name')){}    // true
+    
+    if(personDetails.hasOwnProperty('name')){}    // false
+}
+
+/* Console.log(key)
+Name
+Age
+City
+Country
+*/
 ```
 
 ### Object.entries()
@@ -76,6 +92,17 @@ const map = new Map(Object.entries(obj));
 Map(4) {"Name" => "Bharathikannan", "Age" => 28, "City" => "chennai", "Country" => "India"}
 */
 
+const personDetails = {
+   	name : "Bharathikannan",
+    profession : "Software Developer",
+    city : "Chennai"
+}
+
+Object.entries(personDetails).map(([value, key]) => `${value} ===>${key}`);
+
+/*
+["name ===>Bharathikannan", "profession ===>Software Developer", "city ===>Chennai"]
+*/
 
 ```
 
@@ -85,5 +112,45 @@ var obj = {"Name":"Bharathikannan", "Age":28, "City":"chennai", "Country":"India
 
 let{Name:FullName, Age, Country} = obj;
 console.log(FullName);                //Bharathikannan
+
+```
+
+### Object.getOwnPropertyDescriptors
+```javascript
+const personDetails = {
+   	name : "Bharathikannan",
+    profession : "Software Developer",
+    city : "Chennai"
+}
+
+Object.getOwnPropertyDescriptors(personDetails)
+
+/*
+city: {value: "Chennai", writable: true, enumerable: true, configurable: true}
+name: {value: "Bharathikannan", writable: true, enumerable: true, configurable: true}
+profession: {value: "Software Developer", writable: true, enumerable: true, configurable: true}
+__proto__: Object
+*/
+```
+
+### Object.freeze 
+```javascript
+
+const personDetails = {
+   	name : "Bharathikannan",
+    profession : "Software Developer",
+    city : "Chennai"
+}
+
+Object.freeze(personDetails);     // It will freeze the Object.
+
+Object.getOwnPropertyDescriptors(personDetails);
+
+/*
+city: {value: "Chennai", writable: false, enumerable: true, configurable: false}
+name: {value: "Bharathikannan", writable: false, enumerable: true, configurable: false}
+profession: {value: "Software Developer", writable: false, enumerable: true, configurable: false}
+__proto__: Object
+*/
 
 ```
