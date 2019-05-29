@@ -105,8 +105,11 @@ Output
 2 "c"
 3 2
 */
+```
+
 
 ### Without entries
+```javascript
 for (const [i, v] of ['a', 'b', 'c', 2]) {
   console.log(i,v);
 }
