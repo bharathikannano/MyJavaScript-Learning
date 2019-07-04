@@ -65,7 +65,8 @@ a == b                  //false
 a === b                 //false
 
 var c = a;            
-a == b                  //true
-a === b                 //true
+c == a            // true
+c === a           //true
+c == b            //false
 
 ```
