@@ -144,7 +144,7 @@ console.log(person2 instanceof Book);    // true
 ```
 
 
-### #The Object.defineProperty() method
+### The Object.defineProperty() method
 
 ```javascript
 
