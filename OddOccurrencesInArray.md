@@ -58,3 +58,33 @@ arr.splice(0,2);
 return A[0];
 
 ```
+
+```javscript
+
+<div id="circle" onclick="incSize()"></div>
+
+#circle{
+    height: 50px;
+    width: 50px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}  
+
+function incSize(){
+  if((window.innerHeight > document.getElementById('circle').offsetHeight) && (window.innerWidth > document.getElementById('circle').offsetWidth)){
+    
+   document.getElementById("circle").style.height = document.getElementById('circle').offsetHeight+50+'px';
+   document.getElementById("circle").style.width = document.getElementById('circle').offsetWidth+50+'px';
+    
+  }else{
+    
+   document.getElementById("circle").style.height = '50px';
+   document.getElementById("circle").style.width = '50px';
+  
+  }
+}
+```
