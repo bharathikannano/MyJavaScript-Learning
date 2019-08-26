@@ -144,3 +144,18 @@ var {instagram : insta} = data.social;
 console.log(insta);	//"bharathikannan/insta"
 
 ```
+
+
+# Palindrome
+```javascript
+
+// Example string
+const string1 = 'level';
+const string2 = 'house';
+
+const isPalindrome = (string) => string == string.split('').reverse().join('');
+
+// Test
+isPalindrome(string1); // true
+isPalindrome(string2); // false
+```
