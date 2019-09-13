@@ -24,6 +24,9 @@
    - [Console in Javascript](https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/Console.log(%22OutPut%22).md)
    - [(HOC) Higher Order Functions](https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/higherOrderFunctions.md)
    - [Reference](https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/OddOccurrencesInArray.md)
+  
+  #### 6. Browser API
+   - [Browser API](https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/Browser%20API.md)
    
-  #### 6. Regex
+  #### 7. Regex
    - [Regex Examples](https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/RegexLogic.md)
