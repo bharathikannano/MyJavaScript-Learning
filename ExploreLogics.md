@@ -50,6 +50,11 @@ var sum = (x,y) => y ? x+y : (y) => x+y;
 sum(1,4)          //5
 sum(1)(4)         //5
 ```
+# Removing Duplicates from an Array
+```javascript
+var [...exampleSet] = new Set([1,2,3,4,6,5,1,2,3,4,5,6]);
+cosole.log(exampleSet)		//[1, 2, 3, 4, 6, 5]
+```
 # The Powerful Fibonacci Series
 
 ```javascript
