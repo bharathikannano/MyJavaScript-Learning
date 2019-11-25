@@ -46,6 +46,20 @@ arr.length = 5;       //5
 arr                   // [1,2,3,4,empty]
 ```
 
+### Array Alice Name
+```javascript
+let MyTech = ['one','two','three'];
+
+var {length} = MyTech 
+
+console.log(length);     //3
+
+var {length, 0 : one, 1 : two, 2 : three} = MyTech;
+
+console.log(length,one,two,three);      //3 "one" "two" "three"
+
+```
+
 # Array Sorting 
 
 ### ascending
@@ -121,13 +135,5 @@ b undefined
 c undefined
 2 undefined
 */
-
-```
-
-### Remove null/undefined values from Array
-```javascript
-var data = ['frank', , 'sue', , 'sally', null].compact();
-
-console.log(data);            //['frank', 'sue', 'sally']
 
 ```
