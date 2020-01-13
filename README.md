@@ -27,7 +27,7 @@
   
   #### 6. Browser API
    - [Browser API](https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/Browser%20API.md)
-   - [Window Object] (https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/window.md)
+   - [Window Object](https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/window.md)
    
   #### 7. Regex
    - [Regex Examples](https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/RegexLogic.md)
