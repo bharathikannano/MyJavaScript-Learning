@@ -18,6 +18,7 @@
   #### 4. Object Oriented Javascript
    - [Constructors](https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/constructors.md)
    - [OOJS](https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/OOJS.md)
+   - [Prototype](https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/Prototype.md)
    
   #### 5. Other JS topics
    - [Conditional Statements](https://github.com/bharathikannano/MyJavaScript-Learning/blob/master/conditionalStatements.md)
