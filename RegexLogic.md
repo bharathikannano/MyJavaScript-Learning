@@ -37,7 +37,17 @@ var str = "size=20jjfjjhsize=34hjjhfsize=76width=10jkkfyuduwidth=100";
 console.log(str.match(/[a-zA-Z]+/g);            //["size", "jjfjjhsize", "hjjhfsize", "width", "jkkfyuduwidth"]
 ```
 
-### Find Emoji in string 
+### Find Emoji in string and give equal space both the sides. 
 ```javascript
-"Logan🕐🔔".indexOf("Logan🕐🔔".match(/(\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/g))
+var str = "Logan👨 Karthi👨 Sunder🎨 Janu👩 Pave👨 are friends",
+Pat = /(\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/g, 
+inp;
+
+str.match(Pat).map(val => {
+inp = new RegExp(`${val}`, `g`);
+str = str.replace(inp, ` ${val} `).replace(/\s+/g,' ');
+})
+console.log(str);
+
+//"Logan 👨 Karthi 👨 Sunder 🎨 Janu 👩 Pave 👨 are friends"
 ```
