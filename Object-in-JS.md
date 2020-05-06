@@ -1,5 +1,35 @@
 # Objects
 
+### Object Creation with and without prototype 
+```javascript
+var obj = Object.create(null);
+console.log(obj);
+
+/* {}
+  No properties */
+  
+var obj = {};
+console.log(obj);
+
+/* {}
+      __proto__:
+      constructor: ƒ Object()
+      __defineGetter__: ƒ __defineGetter__()
+      __defineSetter__: ƒ __defineSetter__()
+      hasOwnProperty: ƒ hasOwnProperty()
+      __lookupGetter__: ƒ __lookupGetter__()
+      __lookupSetter__: ƒ __lookupSetter__()
+      isPrototypeOf: ƒ isPrototypeOf()
+      propertyIsEnumerable: ƒ propertyIsEnumerable()
+      toString: ƒ toString()
+      valueOf: ƒ valueOf()
+      toLocaleString: ƒ toLocaleString()
+      get __proto__: ƒ __proto__()
+      set __proto__: ƒ __proto__() */
+
+
+```
+
 ### Object Cloneing
 ```javascript
 var obj1 = { foo: 'bar', x: 42 };
