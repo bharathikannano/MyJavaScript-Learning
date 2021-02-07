@@ -176,3 +176,12 @@ console.log(leapyear(1700));		//false
 console.log(leapyear(1800));		//false
 console.log(leapyear(100));		//false
 ```
+# Remove Duplicate
+```javascript
+function duplicate(arr) {
+  return arr.concat(arr);
+}
+
+duplicate([1,2,3,4,5,1,2,3,4,5]); 
+//[1,2,3,4,5]
+```
