@@ -185,3 +185,12 @@ function duplicate(arr) {
 duplicate([1,2,3,4,5,1,2,3,4,5]); 
 //[1,2,3,4,5]
 ```
+
+## Factorial addition (Monff logic) Constant Time complex
+```javascript
+function sumUp(n){
+return (n/2)*(1+n);
+}
+sumUp(5); 	//15
+sumUp(4);	//10
+```
