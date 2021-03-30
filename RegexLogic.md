@@ -51,3 +51,11 @@ console.log(str);
 
 //"Logan 👨 Karthi 👨 Sunder 🎨 Janu 👩 Pave 👨 are friends"
 ```
+### Number of words in the given string
+```javascript
+let s = 'saveChangesInTheEditor';
+function camelcase(s) {
+console.log(s.match(/[A-Z]/g) ? s.match(/[A-Z]/g).length+1 : 1);  // 5 (Number of words in the given string)
+return s.match(/[A-Z]/g) ? s.match(/[A-Z]/g).length+1 : 1;
+}
+```
