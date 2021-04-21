@@ -24,3 +24,13 @@ obj[v]++;
 });
 console.log(obj); {head: 2, shoulders: 1, knees: 2, and: 1, toes: 1}
 ```
+```javascript
+const countWords = wordList => {
+  return wordList.reduce((acc, word) => {
+    acc[word] = (acc[word] || 0) + 1;
+    return acc;
+  }, {});
+};
+countWords(["head", "shoulders", "knees", "and", "toes", "head", "knees"]);
+//{head: 2, shoulders: 1, knees: 2, and: 1, toes: 1}
+```
