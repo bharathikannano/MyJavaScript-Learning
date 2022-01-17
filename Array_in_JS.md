@@ -64,6 +64,7 @@ console.log(length,one,two,three);      //3 "one" "two" "three"
 
 ### ascending
 ```javascript
+var nums = [10, 5, 40, 25, -3412,4212, -107.578, 97.453];
 var arr = [5,6,2,6,1,2,3];
 
 arr.sort((a,b) => a-b);     //[1, 2, 2, 3, 5, 6, 6]
@@ -71,6 +72,7 @@ arr.sort((a,b) => a-b);     //[1, 2, 2, 3, 5, 6, 6]
 
 ### descending
 ```javascript
+var nums = [10, 5, 40, 25, -3412,4212, -107.578, 97.453];
 var arr = [5,6,2,6,1,2,3];
 
 arr.sort((a,b) => b-a);     //[6, 6, 5, 3, 2, 2, 1]
