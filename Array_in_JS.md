@@ -139,3 +139,13 @@ c undefined
 */
 
 ```
+###  Numeric Alphabet combined sorting
+```javascript
+var array = ["a100","a20","a3","a3b","a3b100","a3b20","a3b3","!!","~~","9","10","9.5"];
+var collator = new Intl.Collator([], {numeric: true});
+array.sort((a, b) => collator.compare(a, b));
+console.log(array);
+
+Output:
+["!!", "~~", "9", "9.5", "10", "a3", "a3b", "a3b3", "a3b20", "a3b100", "a20", "a100"]
+```
