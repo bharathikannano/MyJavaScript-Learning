@@ -184,3 +184,33 @@ __proto__: Object
 */
 
 ```
+
+
+### Object Sorting 
+```javascript
+const person = [{firstName:"John", age:50, eyeColor:"blue"},
+                {firstName:"Bharathi", age:25, eyeColor:"black"},
+                {firstName:"Kannan", age:30, eyeColor:"gray"},
+                {firstName:"vinoth", age:10, eyeColor:"red"}];
+                
+person.sort((a,b) => 1 * a.firstName.localeCompare(b.firstName));
+
+/* ascending sort
+[{"firstName": "Bharathi","age": 25,"eyeColor": "black"},
+ {"firstName": "John","age": 50,"eyeColor": "blue"},
+ {"firstName": "Kannan","age": 30,"eyeColor": "gray"},
+ {"firstName": "vinoth","age": 10,"eyeColor": "red"}
+]
+*/
+
+person.sort((a,b) => -1 * a.firstName.localeCompare(b.firstName));
+
+/*descending sort
+[{"firstName": "vinoth","age": 10,"eyeColor": "red"},
+ {"firstName": "Kannan","age": 30,"eyeColor": "gray"},
+ {"firstName": "John","age": 50,"eyeColor": "blue"},
+ {"firstName": "Bharathi","age": 25,"eyeColor": "black"}
+]
+*/
+
+```
